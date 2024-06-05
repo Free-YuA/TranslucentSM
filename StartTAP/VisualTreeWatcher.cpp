@@ -278,7 +278,7 @@ HRESULT AddSettingsPanel(Grid rootGrid)
 		auto checkBox = CheckBox();
 		checkBox.Content(box_value(L"Hide search box"));
 		stackPanel.Children().Append(checkBox);
-		if (dwHide == 1)
+		if (dwHide == 0)
 		{
 			checkBox.IsChecked(true);
 			srchhide = true;
